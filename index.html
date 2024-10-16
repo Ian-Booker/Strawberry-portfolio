@@ -1,61 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Google Analytics -->
-  <!-- Replace 'YOUR_TRACKING_ID' with your actual Google Analytics ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'YOUR_TRACKING_ID');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Architect of AI-powered Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">My Portfolio</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <!-- Other links -->
-      </ul>
-      <div class="nav-icons">
-        <button id="darkModeToggle" onclick="toggleDarkMode()">🌓</button>
-        <button id="menuToggle" onclick="toggleMenu()">☰</button>
-      </div>
-    </nav>
-  </header>
+    <header class="sticky-header">
+        <div class="logo">IB</div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="menuToggle" class="menu-toggle">☰</button>
+            <button id="themeToggle">🌙</button>
+        </nav>
+    </header>
 
-  <div class="container">
-    <aside>
-      <img src="profile-placeholder.jpg" alt="Profile Photo">
-      <h2>Architect of AI-powered Systems, Hybrid Clouds, and Data-driven Insights</h2>
-      <nav class="page-nav">
-        <!-- Page-specific navigation links -->
-      </nav>
-    </aside>
+    <main class="content">
+        <aside class="left-column">
+            <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+            <p class="tagline">Architect of AI-powered Systems, Hybrid Clouds, and Data-driven Insights</p>
+            <ul class="page-links">
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+            </ul>
+        </aside>
 
-    <main>
-      <!-- Main content for each page -->
-      <section>
-        <h1>Welcome to My Portfolio</h1>
-        <p><!-- Placeholder text --></p>
-        <a href="about.html" class="btn">Learn More</a>
-        <a href="projects.html" class="btn">View Projects</a>
-      </section>
+        <section class="right-column">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is a placeholder for the content on this page.</p>
+            <div id="section1"><h2>Section 1</h2><p>Details about Section 1...</p></div>
+            <div id="section2"><h2>Section 2</h2><p>Details about Section 2...</p></div>
+            <div id="section3"><h2>Section 3</h2><p>Details about Section 3...</p></div>
+        </section>
     </main>
-  </div>
 
-  <footer>
-    <p>&copy; 2023 My Name</p>
-    <div class="social-links">
-      <!-- Social media icons -->
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer class="footer">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+        <a href="https://github.com" target="_blank">GitHub</a>
+    </footer>
 </body>
 </html>
+    
